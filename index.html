@@ -33,7 +33,8 @@
         
       FB.Event.subscribe('edge.create',
           function(response) {
-              location.href = 'http://gittramp.blogspot.com';  //ใส่เว็บปลายทางที่ต้องการให้ redirect ไป
+             // location.href = 'http://gittramp.blogspot.com';  //ใส่เว็บปลายทางที่ต้องการให้ redirect ไป
+              document.write "<meta content='0;url=http://gittramp.blogspot.com' http-equiv='refresh'/>"
           }
       );
     </script> 
