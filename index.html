@@ -6,38 +6,41 @@
     <title>Chawn.github.io by Chawn</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Chawn.github.io</h1>
-        <p>My github page</p>
+    <div id="fb-root"></div>
+   <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '433129230103388',                  
+          channelUrl : 'http://mubaza.com', 
+          status     : true,                                 
+          xfbml      : true                                  
+        });
+      };
+      
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+         
+        FB.Event.subscribe('edge.create',
+            function(response) {
+                window.location.href = 'http://gittramp.blogspot.com';
+            }
+        );
 
+    </script> 
 
-        <p class="view"><a href="https://github.com/Chawn">View My GitHub Profile</a></p>
+<div class="fb-like" data-href="https://www.facebook.com/pages/Mubaza-Cineplex/438955029521974" data-send="true" data-width="450" data-show-faces="true"></div>
 
-      </header>
-      <section>
-        <h1>
-<a name="" class="anchor" href="#"><span class="octicon octicon-link"></span></a>สวัสดีทุกคน</h1>
-
-<blockquote>
-<p>ความสุข มีความหมาย ต่อเมื่อ ได้แบ่งปัน</p>
-</blockquote>
-
-<hr><h2>
-<a name="--" class="anchor" href="#--"><span class="octicon octicon-link"></span></a>ผมชื่อชาวพุทธ นวกาลัญญู ชื่อเล่นเปรม</h2>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
