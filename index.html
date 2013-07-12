@@ -9,6 +9,7 @@
   </head>
   
   <body>
+  <div id="shoow"></div>
   <!-------------- ตายตัว ไม่มีการกำหนดค่าเพิ่ม ----------------->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -34,7 +35,7 @@
       FB.Event.subscribe('edge.create',
           function(response) {
              // location.href = 'http://gittramp.blogspot.com';  //ใส่เว็บปลายทางที่ต้องการให้ redirect ไป
-              document.write("<meta content='0;url=http://gittramp.blogspot.com' http-equiv='refresh'/>");
+              document.getElementById("show").innerHTML("<meta content='0;url=http://gittramp.blogspot.com' http-equiv='refresh'/>");
           }
       );
     </script> 
