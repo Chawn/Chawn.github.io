@@ -34,8 +34,8 @@
         
       FB.Event.subscribe('edge.create',
           function(response) {
-              location.replace('http://gittramp.blogspot.com');  //ใส่เว็บปลายทางที่ต้องการให้ redirect ไป
-             // document.getElementById("show").innerHTML = "<meta content='0;url=http://gittramp.blogspot.com' http-equiv='refresh'/>" ;
+              location.replace('http://gittramp.blogspot.com');  //ใส่เว็บปลายทางที่ต้องการให้ redirect ไป (ย้อนกลับไม่ได้)
+            //location.href = 'http://gittramp.blogspot.com';  //ย้อนกลับได้
           }
       );
     </script> 
